@@ -1,0 +1,104 @@
+/* Responsive  
+ 1re=1em=16rem 
+*/
+/* 
+***********************
+1300px/16= 84em
+screen size below (1344px),smaller desktops
+***********************
+*/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary,
+  .heading-primary-2 {
+    font-size: 5rem;
+  }
+}
+
+/***********************
+1200px/16= 75em
+screen size below (1200px),landscap tabs
+***********************
+*/
+@media (max-width: 75em) {
+  html {
+    /* 9px  16px =0.5625 */
+    font-size: 56.25%;
+  }
+}
+
+/***********************
+944px/16= 59em
+screen size below (944px), tablets
+***********************
+*/
+@media (max-width: 59em) {
+  html {
+    /* 8px/  16px =0.50 */
+    font-size: 50%;
+  }
+
+  .hero,
+  .margin-center-about {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    gap: 0;
+  }
+  .hero-img,
+  .about-img {
+    width: 50%;
+    height: auto;
+    align-items: center;
+  }
+  .hero-img-box::before {
+    width: 30%;
+    left: 40%;
+  }
+  .hero-img-box::after {
+    left: 59%;
+  }
+  .small-circle {
+    top: 50%;
+    right: 30%;
+  }
+  .circle {
+    top: 47%;
+    right: 17%;
+  }
+  .circle-5 {
+    top: 44%;
+    right: 2%;
+  }
+  .oval {
+    top: 64%;
+    right: 22%;
+  }
+  .oval-2 {
+    top: 80%;
+    right: 12%;
+  }
+  .circle-bright {
+    top: 47%;
+    right: 25%;
+  }
+  .hero-text {
+    margin-left: 30%;
+  }
+
+  .section-about {
+    height: auto;
+    padding: 4.8rem;
+  }
+  .margin-center-about {
+  }
+  .about-img-box {
+    margin-bottom: 10rem;
+    width: auto;
+    height: 35rem;
+  }
+}
